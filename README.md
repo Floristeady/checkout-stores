@@ -1,4 +1,4 @@
-# Checkout Stores based in Foundation Compass Template
+# Checkout Stores based on Foundation Compass Template
 
 ## Requirements
 
