@@ -1,168 +1,193 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Mi Compra Checkout - 1. Envio</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+    <header id="header">
+	   <div id="logo">
+		   <div class="row">
+			   <div class="large-3 column small-centered">
+			   <img src="temp/quantumcorals.jpg" alt="quantumcorals" width="230">
+			   </div>
+		   </div>
+	   </div>
+	  <div id="checkout-steps" class="row">
+	      <div class="large-12 columns small-centered">
+	        <h1><span>Mi Compra</span> - checkout</h1>
+	        
+	        <ul class="steps">
+		        <li class="small-4 column no-pad first"><span class="active">1. Envío</span></li>
+		        <li class="small-4 column no-pad"><span>2. Pago</span></li>
+		        <li class="small-4 column no-pad"><span>3. Confirmación</span></li>
+	        </ul>
+	      </div>
+	        
+	  </div>
+    </header>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
+    <section id="main-content" class="step-1">
+		<span class="back"></span>
+    	<div class="row">
+	    	
+	    	 <!--orden lateral-->
+	    	 <div class="medium-4 columns right">
+				<div id="sidebar" class="order-review">
+				    <h3 class="subtitle">Detalle de la Compra</h3>
+				    					
+					<div class="order">
+						
+						<!--repeat-->
+						<div class="wrapper-column row collapse">
+							<div class="column small-2"><img src="http://placehold.it/40x40"></div>
+							<div class="column small-7 text"><p><span class="product-name">Producto nombre corto</span> <span class="variants">[rojo - small]</span><span class="quantity">  x 1</span></p></div>
+							<div class="column small-3"><p class="right">$700.00</p></div>
+						</div>
+						<!-- /repeat -->
+						
+						<!--repeat-->
+						<div class="wrapper-column row collapse">
+							<div class="column small-2"><img src="http://placehold.it/40x40"></div>
+							<div class="column small-7 text"><p><span class="product-name">Producto con nombre muy largo de dos líneas</span> <span class="variants">[rojo - small]</span><span class="quantity">  x 1</span></p></div>
+							<div class="column small-3"><p class="right">$700.00</p></div>
+						</div>
+						<!-- repeat -->
+						
+						
+						<div id="order-subtotal" class="row collapse order-data">
+							<div class="column small-6">
+								<p><strong>Subtotal</strong></p>
+							</div>
+							<div class="column small-6">
+								<p class="right"><strong>$1,400.00</strong></p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			</div>
+			
+			<div class="medium-8 columns left">
+				
+				<div id="wrapper-options">
                 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+			        <h2>Ingresa tus datos de envío</h2>
+			        <form>
+				        <div class="row">
+				            <div class="large-6 columns">
+				              <label>Nombre</label>
+				              <input type="text" placeholder="Escribe tu nombre" />
+				            </div>
+				             <div class="large-6 columns">
+				              <label>Apellido</label>
+				              <input type="text" placeholder="Escribe tu apellido" />
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="large-6 columns">
+				              <label>Email</label>
+				              <input type="text" placeholder="Ej: nombre@miemail.com" />
+				            </div>
+				             <div class="large-6 columns">
+				              <label>Teléfono de contacto</label>
+				              <input type="text" placeholder="+00 (000) 000-0000" />
+				            </div>
+				            <div class="large-12 columns">
+				              <input id="checkbox1" type="checkbox"><label class="checkbox" for="checkbox1">¿Quieres recibir noticas y promociones?</label>
+				            </div>
+				        </div>
+				        <div class="row space">
+				            <div class="large-4 columns">
+				              <label>País</label>
+				              <select>
+					            <option value="husker">Seleccionar opción</option>
+				                <option value="husker">México</option>
+				                <option value="starbuck">EEUU</option>
+				                <option value="starbuck">Canada</option>
+				              </select>
+				            </div>
+			            
+				            <div class="large-4 columns">
+				              <label>Estado/Región</label>
+				              <select>
+					            <option value="husker">Seleccionar opción</option>
+				                <option value="husker">San Luis Potosí</option>
+				                <option value="starbuck">Estado de México</option>
+				                <option value="starbuck">Veracruz</option>
+				                 <option value="starbuck">Puebla</option>
+				              </select>
+				            </div>
+				            
+				            <div class="large-4 columns">
+				              <label>Municipio/Ciudad</label>
+				              <select>
+				                <option value="husker">Puebla</option>
+				                <option value="starbuck">Ciudad de México</option>
+				                <option value="starbuck">Toluca</option>
+				              </select>
+				            </div>
+			            </div>
+	 
+						<div class="row">
+				            <div class="large-12 columns">
+				              <label>Dirección</label>
+				              <textarea placeholder="Escribe calle, número y colonia"></textarea>
+				            </div>
+				            <div class="large-6 columns">
+				              <label>Depto / Edificio / Piso <span>(opcional)</span></label>
+				              <input type="text" placeholder="Ej: departamento 3" />
+				            </div>
+				            <div class="large-6 columns">
+				              <label>Código Postal</label>
+				              <input type="text" placeholder="xxxxxx" />
+				            </div>
+			          </div>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
+			        </form>
+
+				    <!--shipping options-->
+				    <div id="shipping-option" class="space">
+				    	<h2>Selecciona opción de envío</h2>
+				    	<div class="row">
+					    	<div class="large-12 columns">
+						    	<div class="wrapper-radio">
+							    	<label class="radio-option radio-shipping radio" for="radio-s1">
+						    		<input name="shipping" id="radio-s1" type="radio" value="DHL estándar - $30.00">
+						    		<span class="name">DHL estándar - $30.00</span>
+						    		<span class="description">3 a 5 días hábiles</span></label>
+						    
+							    	<label class="radio-option radio-shipping radio" for="radio-s2">
+						    		<input name="shipping" id="radio-s2" type="radio" value="DHL express - $50.00">
+						    		<span class="name">DHL express - $50.00</span>
+						    		<span class="description">1 a 2 días hábiles</span>
+						    		</label>
+						    	</div>
+					    	</div>
+				    	</div>
+				    </div>			    
+			    </div>
+			    <div id="buttons">	
+			      <a href="<!--link al cart de la tienda-->" class="column small-12 medium-6 large-5 button secondary left arrow-left">Volver a la Tienda</a>
+			      <a href="step02.html" class="column small-12 button medium-6 large-5 right arrow-right">Continuar</a>
+			    </div>
+			        
+	    	</div> 
+
+		</div>
+    
+    </section> 
+    
+    <footer id="footer">
+	    <div class="row">
+		    <div class="column large-12 small-centered">
+			    <p>Nombre Tienda | +52 228 333 23445 | email@email.com</p>
+	    		<p><small>Powered by SpinCommerce</small></p>
+		    </div>
+	    </div>
+    </footer>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

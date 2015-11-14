@@ -1,0 +1,444 @@
+
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+//screen size
+$xsmall-screen: 30.063em; //481
+$small-screen: 40.063em; //641
+$medium-screen: 48.00em; //768
+$large-screen: 58.75em; //940
+$xlarge-screen: 64em;//1024
+
+
+/* ==========================================================================
+   General Structure
+   ========================================================================== */
+
+#header {
+	background: $gray-back;
+}
+
+#logo {
+	background: #fff;
+	padding: .5em 0;
+	text-align: center;
+}
+
+#main-content {
+	
+	background: $gray-back;
+	
+	@media only screen and (min-width: $medium-screen) { 
+		background: transparent;
+	
+	
+		& span.back {
+			background: $gray-back;
+			content: '';
+			width: 100%;
+			position: absolute;
+			display: block;
+			float: left;
+			height: 300px;
+		}
+	
+	}
+}
+
+#wrapper-options {
+	background: #fff;
+	box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+	padding: 2em;
+	
+	h2 {
+		border-bottom: 1px solid $gray-lighter;
+		padding-bottom: .8em;
+		margin-bottom: 1em;
+	}
+}
+
+#sidebar {
+	margin-bottom: 2em;
+	
+	h3.subtitle {
+		border-bottom: 1px solid $gray-light;
+	}
+	
+	@media only screen and (min-width: $medium-screen) { 
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: $medium-screen) { 
+	.step-3 #sidebar  {
+		margin-top:2em;
+	}
+}
+
+.confirm-order {
+	h1 {
+		text-transform: none;
+		font-size: rem-calc(25);
+		border-bottom: 1px solid $gray-lighter;
+		margin-bottom: rem-calc(20);
+	}
+	
+	p {
+		font-size: rem-calc(13.5);
+	}
+}
+
+.data-payment {
+	padding: 1em 0 .5em;
+	
+	p {
+		margin-top:1em;
+	}
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1 {
+	letter-spacing: 0.05em;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h3.subtitle {
+	border-bottom: 1px solid $gray-lighter;
+	padding-bottom: .8em;
+	margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   Steps
+   ========================================================================== */
+ 
+#checkout-steps {
+	
+	padding: 1.2em 0 1em;
+	
+	h1 {
+		text-align: center;
+		font-weight: bold;
+		color: $gray-darker;
+		
+		span {
+			text-transform: uppercase;
+		}
+	}
+	
+	.steps {
+	    overflow: hidden;
+	    margin: 1.5em 0 2em;
+	    padding: 0;
+	    
+	     li {
+		     list-style: none;
+		     
+	     }
+	     
+	     li.first span:before {
+				    margin-left: 0;
+			}
+	    
+	     li span {
+		    text-decoration: none;
+		    padding: 7px 0 7px 22px;
+		    background: $gray-light;
+		    position: relative;
+		    float: left;
+		    display: block;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    letter-spacing: 0.05em;
+		    color: rgba(255, 255, 255, .7);
+		    width: 100%;
+		    border-right: 3px solid $gray-light;
+		    font-size: rem-calc(9);
+		    
+		    @media only screen and (min-width: $xsmall-screen) { 
+			     font-size: rem-calc(12);
+			}
+		    
+		    @media only screen and (min-width: $medium-screen) { 
+			    padding: 7px 0 7px 50px;
+			    font-size: rem-calc(13);
+		    }
+
+		    &.active {
+			    background: $dark-blue;
+			    color: white;
+			    
+			    &:after {
+				    border-left-color: $dark-blue;
+			    }
+		    }
+		    
+		    &.confirm {
+			    background: #85C199;
+			    
+			    &:after {
+				    border-left-color: #85C199;
+			    }
+
+		    }
+		    
+		    &:before {
+		        content: '';
+			    border-left: 18px solid $gray-back;
+			    border-top: 18px solid transparent;
+			    border-bottom: 18px solid transparent;
+			    position: absolute;
+			    top: 0;
+			    left: 0;	
+			}
+		    
+		    &:after {
+			    content: '';
+			    border-left: 18px solid $gray-light;
+			    border-top: 18px solid transparent;
+			    border-bottom: 18px solid transparent;
+			    position: absolute;
+			    top: 0;
+			    left: 100%;
+			    z-index: 20;
+			    
+			}
+
+    	}
+
+	}
+    
+}
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+ 
+label {
+	text-transform: uppercase;
+	
+	&.checkbox {
+		text-transform: none;
+		color: $gray-darker;
+		font-weight: normal;
+	}
+	
+	span {
+		text-transform: none;
+		color: $gray-darksome;
+	}
+	
+	&.radio-option {
+		background: $gray-lighter;
+		padding: 1em;
+		margin-bottom: 1em;
+		font-weight: bold;
+		font-size: rem-calc(15);
+		
+		.name {
+			color: $gray-darker;
+			margin-left: rem-calc(5);
+		}
+		
+		.description {
+			font-weight: normal;
+			color: $dark-blue;
+			line-height: 130%;
+			display: block;
+			margin-left: rem-calc(20);
+		}
+	}
+	
+	&.radio-shipping {
+		
+		.description { 
+			margin-top: -1em;
+		}
+		
+		&.active {
+			background: $dark-blue;
+			
+			span {
+				color: $silver;
+			}
+		}
+	}
+	
+	&.radio-payment {
+		
+		.description { 
+			font-size: rem-calc(13);
+			margin-bottom: rem-calc(20);
+		}
+		
+		&.active {
+			background: $dark-blue;
+			
+			span {
+				color: $silver;
+			}
+		}
+	}
+}
+
+#data-shipping {
+	padding: 1em 0 0;
+	
+	h4 {
+		text-transform: uppercase;
+		padding: 1em 0 0;
+	}
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+ 
+button, .button {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+#buttons {
+	margin: 1em 0 3em;
+}
+
+.simple-button {
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: rem-calc(13);
+}
+
+.arrow-left:before {
+	content: '';
+	background-image: url(../assets/arrows_buttons.svg);
+	background-position: 0px center;
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 21px;
+	vertical-align: middle;
+	display: inline-block;
+	    margin-right: 20px;
+}
+
+.arrow-right:after {
+	content: '';
+	background-image: url(../assets/arrows_buttons.svg);
+	background-position: -24px center;
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 21px;
+	vertical-align: middle;
+	display: inline-block;
+	    margin-left: 20px;
+}
+
+/* ==========================================================================
+   Order
+   ========================================================================== */
+
+.wrapper-column {
+	
+	border-bottom: 1px solid $gray-light;
+	padding-top: rem-calc(14);
+	
+	@media only screen and (min-width: $medium-screen) {
+		padding-top: rem-calc(20);
+	}
+	
+	.text {
+		padding-left: 2% !important;
+		
+		 p {
+			 font-size: rem-calc(13);
+			 line-height:130%; 
+			 margin-bottom: rem-calc(14);
+			 
+			 @media only screen and (min-width: $medium-screen) {
+				 margin-bottom: rem-calc(16);
+			 }
+		 }
+	}
+	
+	.product-name {
+		font-weight: bold;
+	}
+	
+	.quantity {
+		color: $dark-blue;
+		font-weight: bold;
+		display: block;
+	}
+	
+	.variants {
+		display: block;
+	}
+}
+
+.order-data p {
+	margin-bottom: 0;
+}
+
+#order-subtotal, #order-shipping {
+	padding: rem-calc(15 0);
+}
+
+#order-shipping {
+	border-top: 1px solid $gray-light;
+}
+
+#order-total {
+	padding: rem-calc(15 0);
+	background: $steel-light;
+	
+	p {
+		text-transform: uppercase;
+	}
+} 
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+	background: $gray-back;
+	float: left;
+	width: 100%;
+	padding: 1.4em 0 .5em;
+	text-align: center;
+}
+
+#footer p {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: .4em;
+}
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+ 
+.space {
+	margin-top: 1em !important;
+}
+
+.no-pad {
+	padding: 0;
+}
+
+.green {
+	color: $green;
+}
+
+
+

@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Compra Checkout - 3. Confirmación</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <header id="header">
+	   <div id="logo">
+		   <div class="row">
+			   <div class="large-3 column small-centered">
+			   <img src="temp/quantumcorals.jpg" alt="quantumcorals" width="230">
+			   </div>
+		   </div>
+	   </div>
+	  <div id="checkout-steps" class="row">
+	      <div class="large-12 columns small-centered">
+	        <h1><span>Mi Compra</span> - checkout</h1>
+	        
+	       <ul class="steps">
+		        <li class="small-4 column no-pad first"><span class="confirm">1. Envío</span></li>
+		        <li class="small-4 column no-pad"><span class="confirm">2. Pago</span></li>
+		        <li class="small-4 column no-pad"><span class="active">3. Confirmación</span></li>
+	        </ul>
+	      </div>
+	        
+	  </div>        
+	</header>
+    
+    <section id="main-content" class="step-3">
+        <span class="back"></span>
+    	<div class="row">
+	    	
+	    				
+			<div class="medium-8 columns left">
+				
+				<!--payment options-->
+				<div id="wrapper-options" class="confirm-order">
+                
+			        <h1 class="green"><strong>Tu orden ha sido confirmada.</strong></h1>
+			        <p>Tu orden fue ingresada exitosamente con el código <strong>T2CD137</strong>.<br> 
+Recibirás un email de confirmación.</p>
+			        
+			        <div class="row data-payment">
+				    	<div class="large-12 columns">
+					    	<h3 class="subtitle">Forma de Pago: paypal</h3>
+					    	<p class="green">La orden ha sido pagada con éxito. </p>
+					    </div>
+				    </div>
+				    
+				    <div id="data-shipping">
+					   
+				    	<h3 class="subtitle">Información de Envío</h3>
+				    	
+				    	 <div class="row">
+					    	<div class="column medium-7">
+						    	<h4><strong>Datos de envío</strong></h4>
+						    	<p>Nombre Apellido<br>
+						    	Calle 14 Oriente 33, Colonia Nombre.<br>
+						    	Municipio, CP7122<br>
+						    	Estado, País.</p>
+					    	</div>
+					    	
+					    	<div class="column medium-5">
+						    	<h4><strong>Opción de envío</strong></h4>
+						    	<p>DHL Express<br>
+								2 a 5 días hábiles <br>
+								<strong>$50.00</strong></p>
+					    	</div>
+					    </div>
+				    </div>
+			    </div>
+
+			    <div id="buttons" class="show-for-medium-up">	
+			      <a href="<!--link a tienda-->" class="button right arrow-right">Ir a la Tienda</a>
+			    </div>
+			        
+	    	</div> 
+	    	
+	    	 <!--orden lateral-->
+	    	 <div class="medium-4 columns right">
+				<div id="sidebar" class="order-review">
+				    <h3 class="subtitle">Detalle de la Compra</h3>
+				    					
+					<div class="order">
+						
+						<!--repeat-->
+						<div class="wrapper-column row collapse">
+							<div class="column small-2"><img src="http://placehold.it/40x40"></div>
+							<div class="column small-7 text"><p><span class="product-name">Producto nombre corto</span> <span class="variants">[rojo - small]</span><span class="quantity">  x 1</span></p></div>
+							<div class="column small-3"><p class="right">$700.00</p></div>
+						</div>
+						<!-- /repeat -->
+						
+						<!--repeat-->
+						<div class="wrapper-column row collapse">
+							<div class="column small-2"><img src="http://placehold.it/40x40"></div>
+							<div class="column small-7 text"><p><span class="product-name">Producto con nombre muy largo de dos líneas</span> <span class="variants">[rojo - small]</span><span class="quantity">  x 1</span></p></div>
+							<div class="column small-3"><p class="right">$700.00</p></div>
+						</div>
+						<!-- repeat -->
+						
+						<div id="order-subtotal" class="order-data row collapse">
+							<div class="column small-6">
+								<p><strong>Subtotal</strong></p>
+							</div>
+							<div class="column small-6">
+								<p class="right"><strong>$1,400.00</strong></p>
+							</div>
+						</div>
+						
+						<div id="order-shipping" class="order-data row collapse">
+							<div class="column small-6">
+								<p><strong>Costo Despacho</strong><br>DHL Express</p>
+							</div>
+							<div class="column small-6">
+								<p class="right"><strong>$50.00</strong></p>
+							</div>
+						</div>
+						
+						<div id="order-total" class="order-data row">
+							<div class="column small-6">
+								<p><strong>Total</strong></p>
+							</div>
+							<div class="column small-6">
+								<p class="right"><strong>$1,450.00</strong></p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			</div>
+			
+			<div id="buttons" class="show-for-small-only">	
+			      <a href="<!--link a tienda-->" class="column small-12 button right arrow-right">Ir a la Tienda</a>
+			</div>
+
+
+		</div>
+    
+    </section> 
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

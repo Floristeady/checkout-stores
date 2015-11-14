@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Compra Checkout - 2. Pago</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <header id="header">
+	   <div id="logo">
+		   <div class="row">
+			   <div class="large-3 column small-centered">
+			   <img src="temp/quantumcorals.jpg" alt="quantumcorals" width="230">
+			   </div>
+		   </div>
+	   </div>
+	  <div id="checkout-steps" class="row">
+	      <div class="large-12 columns small-centered">
+	        <h1><span>Mi Compra</span> - checkout</h1>
+	        
+	        <ul class="steps">
+		        <li class="small-4 column no-pad first"><span class="confirm">1. Envío</span></li>
+		        <li class="small-4 column no-pad"><span class="active">2. Pago</span></li>
+		        <li class="small-4 column no-pad"><span>3. Confirmación</span></li>
+	        </ul>
+	      </div>
+	        
+	  </div>    
+	</header>
+    
+    <section id="main-content" class="step-2">
+        <span class="back"></span>
+    	<div class="row">
+	    	
+	    	 <!--orden lateral-->
+	    	 <div class="medium-4 columns right">
+				<div id="sidebar" class="order-review">
+				    <h3 class="subtitle">Detalle de la Compra</h3>
+				    					
+					<div class="order">
+						
+						<!--repeat-->
+						<div class="wrapper-column row collapse">
+							<div class="column small-2"><img src="http://placehold.it/40x40"></div>
+							<div class="column small-7 text"><p><span class="product-name">Producto nombre corto</span> <span class="variants">[rojo - small]</span><span class="quantity">  x 1</span></p></div>
+							<div class="column small-3"><p class="right">$700.00</p></div>
+						</div>
+						<!-- /repeat -->
+						
+						<!--repeat-->
+						<div class="wrapper-column row collapse">
+							<div class="column small-2"><img src="http://placehold.it/40x40"></div>
+							<div class="column small-7 text"><p><span class="product-name">Producto con nombre muy largo de dos líneas</span> <span class="variants">[rojo - small]</span><span class="quantity">  x 1</span></p></div>
+							<div class="column small-3"><p class="right">$700.00</p></div>
+						</div>
+						<!-- repeat -->
+						
+						<div id="order-subtotal" class="order-data row collapse">
+							<div class="column small-6">
+								<p><strong>Subtotal</strong></p>
+							</div>
+							<div class="column small-6">
+								<p class="right"><strong>$1,400.00</strong></p>
+							</div>
+						</div>
+						
+						<div id="order-shipping" class="order-data row collapse">
+							<div class="column small-6">
+								<p><strong>Costo Despacho</strong><br>DHL Express</p>
+							</div>
+							<div class="column small-6">
+								<p class="right"><strong>$50.00</strong></p>
+							</div>
+						</div>
+						
+						<div id="order-total" class="order-data row">
+							<div class="column small-6">
+								<p><strong>Total a Pagar</strong></p>
+							</div>
+							<div class="column small-6">
+								<p class="right"><strong>$1,450.00</strong></p>
+							</div>
+						</div>
+					</div>
+			    </div>
+			</div>
+			
+			<div class="medium-8 columns left">
+				
+				<!--payment options-->
+				<div id="wrapper-options" class="payment-options">
+                
+			        <h2>Selecciona tu forma de pago</h2>
+			        
+			        <div class="row">
+				    	<div class="large-12 columns">
+					    	<div class="wrapper-radio">
+						    	<label class="radio-option radio-payment radio" for="radio-s1">
+					    		<input name="shipping" id="radio-s1" type="radio" value="DHL estándar - $30.00">
+					    		<span class="name">Transferencia Bancaria</span>
+					    		<span class="description"><strong>Puedes hacer una transferencia o depósito a nuestra cuenta bancaria.</strong><br> En el siguiente paso podrás ver nuestros datos bancarios y tu compra será confirmada.  </span></label>
+					    
+						    	<label class="radio-option radio-payment radio" for="radio-s2">
+					    		<input name="shipping" id="radio-s2" type="radio" value="DHL express - $50.00">
+					    		<span class="name">Pagar con Paypal Express</span>
+					    		<span class="description"><strong>Paga con tu tarjeta de crédito/débito a través de tu cuenta PayPal.</strong><br> Al continuar serás redirigido a la plataforma de Paypal para seguir el proceso de pago, si no tienes cuenta puedes crear una o pagar como invitado.</span>
+					    		</label>
+						    </div>
+					    </div>
+				    </div>
+				    
+				    <div id="data-shipping">
+					   
+				    	<h3 class="subtitle">Información de Envío</h3>
+				    	
+				    	 <div class="row">
+					    	<div class="column medium-7">
+						    	<h4><strong>Datos de envío</strong></h4>
+						    	<p>Nombre Apellido<br>
+						    	Calle 14 Oriente 33, Colonia Nombre.<br>
+						    	Municipio, CP7122<br>
+						    	Estado, País.</p>
+						    	<a class="simple-button" href="#edit">Editar</a>
+					    	</div>
+					    	
+					    	<div class="column medium-5">
+						    	<h4><strong>Opción de envío</strong></h4>
+						    	<p>DHL Express<br>
+								2 a 5 días hábiles <br>
+								<strong>$50.00</strong></p>
+								<a class="simple-button" href="#edit">Editar</a>
+					    	</div>
+					    </div>
+				    </div>
+			    </div>
+
+			    <div id="buttons">	
+			      <a href="index.html" class="column small-12 medium-6 large-5 button secondary left arrow-left">Volver a Envío</a>
+			      <a href="step03.html" class="column small-12 button medium-6 large-5 button right arrow-right">Pagar Ahora</a>
+			    </div>
+			        
+	    	</div> 
+
+		</div>
+    
+    </section> 
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
