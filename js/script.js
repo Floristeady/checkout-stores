@@ -20,7 +20,6 @@ jQuery(function($){
   }
   
   function onLoadAndResize(){
-    radioAddClass();
            
     if(browserwidth>=mobilewidth){
       heightForBackground();
@@ -31,20 +30,7 @@ jQuery(function($){
 	  heightSidebar = $('#sidebar').height();	  
 	  $('#main-content span.back').css('height', heightSidebar+20);
   }
-  
-  function radioAddClass() {
-	  $('input:radio').click(function() {
-		  console.log('clic');
-		    if ($(this).is(':checked')) {
-		        $(this).parent().addClass('active');
-		        $(this).parent().siblings('label').removeClass('active');
-		    } else {
-		        $(this).parent().siblings('label').removeClass('active');
-		    };
-		});
-  }
-  
-  
+    
 /************************* 
  Execution
 **************************/
